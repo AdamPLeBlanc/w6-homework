@@ -6,7 +6,7 @@ function signIn(){
 //Function called "signUp", causes a prompt to appear and ask for user's email address, then prints to the "output-here" paragraph "Thanks for signing up, " and the entered email address. Should be triggered by clicking on the button with id of "sign-up".
 function signUp(){
     var addr = " ";
-    while(! /[\w\.\d]+@\w+\.com/.test(addr))
+    while(! /[\w\.\d]+@\w+\.com/.test(addr) && addr !== null)
     {
         addr =  prompt("Please enter your email address");
     }
